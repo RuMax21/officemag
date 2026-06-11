@@ -1,0 +1,29 @@
+@use '../abstracts/mixins' as *;
+@use '../abstracts/variables' as *;
+
+body {
+  font-family: $font-family-base;
+  color: $color-text;
+}
+
+.section {
+  padding: 72px 0;
+  background: $color-surface;
+
+  &__head {
+    @include max-width-container;
+    margin-bottom: 40px;
+  }
+
+  &__title {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 8px;
+    letter-spacing: 0.04em;
+  }
+
+  &__body {
+    @include max-width-container;
+  }
+}

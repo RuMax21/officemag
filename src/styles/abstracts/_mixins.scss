@@ -1,0 +1,13 @@
+@use './variables' as *;
+
+@mixin max-width-container {
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+@mixin card {
+  background-color: $color-surface;
+  border-radius: $radius-lg;
+  box-shadow: $shadow-card;
+}

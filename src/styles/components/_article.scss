@@ -1,0 +1,67 @@
+@use '../abstracts/mixins' as *;
+@use '../abstracts/variables' as *;
+
+.article {
+  padding: 36px 40px;
+  @include card;
+
+  ol,
+  ul {
+    padding-left: 24px;
+    margin-bottom: 14px;
+  }
+
+  li {
+    margin-bottom: 4px;
+  }
+
+  blockquote p {
+    border-left: 3px solid $color-accent;
+    padding: 12px 20px;
+    margin: 20px 0;
+    background: rgba($color-accent, 0.04);
+    margin-bottom: 4px;
+    font-style: italic;
+  }
+
+  footer {
+    font-size: 12px;
+    color: $color-text-muted;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+
+  th {
+    background-color: $color-background;
+    text-align: left;
+    padding: 8px 12px;
+    font-weight: 600;
+    border-bottom: 2px solid $color-border;
+  }
+
+  td {
+    padding: 8px 12px;
+    border-bottom: 1px solid $color-border;
+  }
+
+  tr:last-child td {
+    border-bottom: none;
+  }
+
+  figure {
+    margin: 20px 0;
+    overflow-x: auto;
+  }
+
+  figcaption {
+    font-size: 12px;
+    text-align: center;
+    margin-top: 6px;
+    color: $color-text-muted;
+  }
+}

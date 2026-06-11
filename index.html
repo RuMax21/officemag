@@ -1,13 +1,125 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>officemag</title>
+    <script type="module" src="/src/main.ts"></script>
+    <title>Officemag</title>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
+    <main>
+      <section class="section">
+        <div class="section__head">
+          <h2 class="section__title">
+            Произвольный текст с максимальным разноообразием
+          </h2>
+        </div>
+        <div class="section__body">
+          <article class="article">
+            <h3>Краткая история интернета</h3>
+            <p>
+              Интернет возник, потому что в
+              <time datetime="1969">1969</time> году нескольким бородатым
+              ребятам в
+              <abbr title="Advanced Research Projects Agency">ARPA</abbr> стало
+              скучно пересылать друг другу распечатки с мейнфреймов. Сначала
+              сеть связывала два университета — чисто чтобы обмениваться мемами
+              про ЭВМ, но уже к <strong>1990-м</strong> мемы захватили планету.
+            </p>
+
+            <h4>Ключевые события, о которых вы не просили:</h4>
+            <ul>
+              <li>
+                1969 — первый пакет данных между UCLA и SRI. Историки спорят,
+                было ли это <strong>«LO»</strong> (первые две буквы от LOGIN)
+                или первый в мире пинг с текстом <s>«пришли пиццу»</s>.
+              </li>
+              <li>
+                1991 — <cite>Тим Бернерс-Ли</cite> публикует протокол WWW и
+                лишает человечество шанса когда-либо снова запомнить номер
+                телефона наизусть.
+              </li>
+              <li>
+                1993 — выходит браузер <mark>Mosaic</mark>. Люди впервые видят
+                сайт с анимированным костром и счётчиком посещений.
+              </li>
+              <li>
+                2004 — рождение <cite>Web 2.0</cite>. Теперь содержимое сайтов
+                создаёте вы, а зарабатывают на нём другие.
+              </li>
+            </ul>
+
+            <h4>Пропускная способность со временем</h4>
+            <figure>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Год</th>
+                    <th>Технология</th>
+                    <th>Скорость</th>
+                    <th>Ощущение</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1995</td>
+                    <td>Dial-up</td>
+                    <td>56 Кбит/с</td>
+                    <td>
+                      Можно успеть приготовить ужин, пока грузится одна
+                      фотография
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>2003</td>
+                    <td>ADSL</td>
+                    <td>до 8 Мбит/с</td>
+                    <td>Фильм качается всего лишь одну ночь — прогресс!</td>
+                  </tr>
+                  <tr>
+                    <td>2012</td>
+                    <td>VDSL2</td>
+                    <td>до 100 Мбит/с</td>
+                    <td>
+                      Внезапно можно смотреть видео в 1080p, жизнь налаживается
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>2024</td>
+                    <td>Оптика / 5G</td>
+                    <td>до 10 Гбит/с</td>
+                    <td>
+                      Вы тратите этот канал на скроллинг видосиков с хомяками. И
+                      вам норм.
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <figcaption>Эволюция скоростей домашнего интернета</figcaption>
+            </figure>
+
+            <blockquote>
+              <p>
+                «Мечта о сети всегда была о едином информационном пространстве,
+                в котором любой человек мог бы делиться знаниями. А получились в
+                основном котики и споры в комментариях. Но котики — тоже круто.»
+              </p>
+              <footer>Тим Бернерс-Ли (почти)</footer>
+            </blockquote>
+
+            <p>
+              Источник:
+              <a
+                href="https://ru.wikipedia.org/wiki/Интернет"
+                target="_blank"
+                rel="noopener"
+              >
+                Википедия
+              </a>
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
