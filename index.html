@@ -130,20 +130,23 @@
               <h2 class="form-section__title">Заполните поля</h2>
               <span class="form-section__hint">ну пожалуйста</span>
             </div>
-            <form class="form" action="#">
+            <form id="form" class="form" action="#">
               <fieldset class="fieldset">
                 <legend class="fieldset__legend">
                   <span>Основное</span>
                 </legend>
                 <div class="field">
                   <label class="field__label" for="user-name">Имя</label>
-                  <input
-                    class="field__input"
-                    type="text"
-                    id="user-name"
-                    name="user-name"
-                    placeholder="по паспорту"
-                  />
+                  <div class="field__control">
+                    <input
+                      class="field__input"
+                      type="text"
+                      id="user-name"
+                      name="user-name"
+                      placeholder="по паспорту"
+                    />
+                    <span class="field__error" aria-live="polite"></span>
+                  </div>
                 </div>
                 <div class="field">
                   <label class="field__label" for="mood-color"
