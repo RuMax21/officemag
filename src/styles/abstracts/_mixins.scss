@@ -11,3 +11,20 @@
   border-radius: $radius-lg;
   box-shadow: $shadow-card;
 }
+
+@mixin outline-button($line-width, $border-color) {
+  border: $line-width solid $border-color;
+
+  &:hover {
+    background-color: $btn-default-bg-hover;
+  }
+
+  &:active {
+    background-color: $btn-default-bg-active;
+  }
+
+  &:disabled {
+    background-color: $btn-default-bg-disabled;
+    border-color: $btn-default-border-disabled;
+  }
+}

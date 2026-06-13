@@ -7,7 +7,7 @@ function setFieldState(
   $input: JQuery<HTMLElement>,
   state: FieldStateType,
   message = '',
-) {
+): void {
   const $error = $input.closest('.field__control').find('.field__error');
 
   $input

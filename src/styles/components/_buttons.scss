@@ -1,0 +1,123 @@
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+.buttons-section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.button-actions {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.btn {
+  border-radius: $radius-sm;
+  padding: 6px 14px;
+  font-size: 12px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  background-color: $btn-default-bg;
+
+  &:disabled {
+    cursor: not-allowed;
+  }
+
+  &--default {
+    @include outline-button(1px, $btn-default-border);
+
+    &:disabled {
+      background-color: $btn-default-bg-disabled;
+      border-color: $btn-default-border-disabled;
+    }
+  }
+
+  &--outline-danger {
+    @include outline-button(2px, $btn-outline-danger-border);
+  }
+
+  &--outline-success {
+    @include outline-button(2px, $btn-outline-success-border);
+  }
+
+  &--danger {
+    background-color: $btn-danger-bg;
+    color: $color-surface;
+
+    &:hover {
+      background-color: $btn-danger-bg-hover;
+    }
+
+    &:active {
+      background-color: $btn-danger-bg-active;
+    }
+
+    &:disabled {
+      background-color: $btn-danger-bg-disabled;
+    }
+  }
+
+  &--success {
+    background-color: $btn-success-bg;
+    color: $color-surface;
+
+    &:hover {
+      background-color: $btn-success-bg-hover;
+    }
+
+    &:active {
+      background-color: $btn-success-bg-active;
+    }
+
+    &:disabled {
+      background-color: $btn-success-bg-disabled;
+    }
+  }
+
+  &--arrow {
+    @include outline-button(1px, $btn-default-border);
+    position: relative;
+    padding-right: 20px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 55%;
+      right: 8px;
+      border-style: solid;
+      border-width: 5px 0 5px 5px;
+      border-color: transparent transparent transparent
+        $btn-outline-danger-border;
+      transform: translateY(-55%);
+    }
+
+    &:disabled {
+      &::after {
+        border-color: transparent transparent transparent $btn-arrow-disabled;
+      }
+    }
+  }
+
+  &--action {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    img {
+      object-fit: contain;
+      vertical-align: middle;
+      flex-shrink: 0;
+    }
+  }
+}
+
+.controls {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
