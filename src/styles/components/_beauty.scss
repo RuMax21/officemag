@@ -51,7 +51,7 @@
       background: radial-gradient(
         ellipse at center top,
         lighten($beauty-btn-active, 6%) 0%,
-        $beauty-btn-normal 50%,
+        $beauty-btn-active 50%,
         darken($beauty-btn-active, 4%) 100%
       );
       box-shadow:
