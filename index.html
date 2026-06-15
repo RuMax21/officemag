@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Officemag</title>
+    <script type="module" crossorigin src="/officemag/assets/index-BBF-yjCD.js"></script>
+    <link rel="stylesheet" crossorigin href="/officemag/assets/index-C8w7L8CI.css">
+  </head>
+  <body>
+    <main>
+      <section class="section">
+        <div class="section__head">
+          <h2 class="section__title">
+            Произвольный текст с максимальным разноообразием
+          </h2>
+        </div>
+        <div class="section__body">
+          <article class="article">
+            <h3>Краткая история интернета</h3>
+            <p>
+              Интернет возник, потому что в
+              <time datetime="1969">1969</time> году нескольким бородатым
+              ребятам в
+              <abbr title="Advanced Research Projects Agency">ARPA</abbr> стало
+              скучно пересылать друг другу распечатки с мейнфреймов. Сначала
+              сеть связывала два университета — чисто чтобы обмениваться мемами
+              про ЭВМ, но уже к <strong>1990-м</strong> мемы захватили планету.
+            </p>
+
+            <h4>Ключевые события, о которых вы не просили:</h4>
+            <ul>
+              <li>
+                1969 — первый пакет данных между UCLA и SRI. Историки спорят,
+                было ли это <strong>«LO»</strong> (первые две буквы от LOGIN)
+                или первый в мире пинг с текстом <s>«пришли пиццу»</s>.
+              </li>
+              <li>
+                1991 — <cite>Тим Бернерс-Ли</cite> публикует протокол WWW и
+                лишает человечество шанса когда-либо снова запомнить номер
+                телефона наизусть.
+              </li>
+              <li>
+                1993 — выходит браузер <mark>Mosaic</mark>. Люди впервые видят
+                сайт с анимированным костром и счётчиком посещений.
+              </li>
+              <li>
+                2004 — рождение <cite>Web 2.0</cite>. Теперь содержимое сайтов
+                создаёте вы, а зарабатывают на нём другие.
+              </li>
+            </ul>
+
+            <h4>Пропускная способность со временем</h4>
+            <figure>
+              <table>
+                <thead>
+                  <tr>
+                    <th>Год</th>
+                    <th>Технология</th>
+                    <th>Скорость</th>
+                    <th>Ощущение</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1995</td>
+                    <td>Dial-up</td>
+                    <td>56 Кбит/с</td>
+                    <td>
+                      Можно успеть приготовить ужин, пока грузится одна
+                      фотография
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>2003</td>
+                    <td>ADSL</td>
+                    <td>до 8 Мбит/с</td>
+                    <td>Фильм качается всего лишь одну ночь — прогресс!</td>
+                  </tr>
+                  <tr>
+                    <td>2012</td>
+                    <td>VDSL2</td>
+                    <td>до 100 Мбит/с</td>
+                    <td>
+                      Внезапно можно смотреть видео в 1080p, жизнь налаживается
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>2024</td>
+                    <td>Оптика / 5G</td>
+                    <td>до 10 Гбит/с</td>
+                    <td>
+                      Вы тратите этот канал на скроллинг видосиков с хомяками. И
+                      вам норм.
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <figcaption>Эволюция скоростей домашнего интернета</figcaption>
+            </figure>
+
+            <blockquote>
+              <p>
+                «Мечта о сети всегда была о едином информационном пространстве,
+                в котором любой человек мог бы делиться знаниями. А получились в
+                основном котики и споры в комментариях. Но котики — тоже круто.»
+              </p>
+              <footer>Тим Бернерс-Ли (почти)</footer>
+            </blockquote>
+
+            <p>
+              Источник:
+              <a
+                href="https://ru.wikipedia.org/wiki/Интернет"
+                target="_blank"
+                rel="noopener"
+              >
+                Википедия
+              </a>
+            </p>
+          </article>
+        </div>
+      </section>
+      <section class="section">
+        <div class="section__head">
+          <h2 class="section__title">Форма</h2>
+        </div>
+        <div class="section__body">
+          <div class="form-section">
+            <div class="form-section__head">
+              <h2 class="form-section__title">Заполните поля</h2>
+              <span class="form-section__hint">ну пожалуйста</span>
+            </div>
+            <form id="form" class="form" action="#">
+              <fieldset class="fieldset">
+                <legend class="fieldset__legend">
+                  <span>Основное</span>
+                </legend>
+                <div class="field">
+                  <label class="field__label" for="user-name">Имя</label>
+                  <div class="field__control">
+                    <input
+                      class="field__input"
+                      type="text"
+                      id="user-name"
+                      name="user-name"
+                      placeholder="по паспорту"
+                    />
+                    <span class="field__error" aria-live="polite"></span>
+                  </div>
+                </div>
+                <div class="field">
+                  <label class="field__label" for="mood-color"
+                    >Цвет вашего настроения</label
+                  >
+                  <input
+                    id="mood-color"
+                    name="mood-color"
+                    type="color"
+                    value="#4040cc"
+                  />
+                </div>
+              </fieldset>
+              <fieldset class="fieldset fieldset--highlight">
+                <legend class="fieldset__legend">
+                  <span> Дополнительно </span>
+                </legend>
+                <div class="field">
+                  <label class="field__label" for="comment-area"
+                    >Комментарий</label
+                  >
+                  <textarea
+                    class="field__input field__input--textarea"
+                    id="comment-area"
+                    name="comment-area"
+                    placeholder="Напишите хоть что-нибудь.&#10;Если хотите, конечно."
+                  ></textarea>
+                </div>
+              </fieldset>
+              <div class="form__agreement">
+                <label for="agreement-radio" class="form__option">
+                  <input
+                    id="agreement-radio"
+                    name="agreement-radio"
+                    type="radio"
+                    value="just yes"
+                  />
+                  <span class="form__option--text">
+                    Ну а тут просто полежит радиобатон (пусть лежит, но их
+                    должно быть минимум 2)
+                  </span>
+                </label>
+                <label for="agreement-checkbox" class="form__option">
+                  <input
+                    id="agreement-checkbox"
+                    name="agreement-checkbox"
+                    type="checkbox"
+                    value="yes"
+                    required
+                  />
+                  <span class="form__option--text">
+                    Соглашаюсь на все, что бы вы не придумали и осознаю, что это
+                    может означать<a href="#"> что угодно </a>
+                  </span>
+                </label>
+              </div>
+              <div class="form__action">
+                <button class="form__button" type="submit">
+                  Отправить все мои данные
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="section__head">
+          <h2 class="section__title">Кнопки</h2>
+        </div>
+        <div class="section__body">
+          <div class="buttons-section">
+            <button class="btn btn--default">Просмотреть</button>
+            <button class="btn btn--outline-danger">Просмотреть</button>
+            <button class="btn btn--danger">Просмотреть</button>
+            <button class="btn btn--arrow">Просмотреть</button>
+            <button class="btn btn--success">Просмотреть</button>
+            <button class="btn btn--outline-success">Просмотреть</button>
+          </div>
+          <div class="button-actions">
+            <button class="btn btn--default btn--action">
+              <img src="/officemag/icons/edit.png" alt="Редактировать" />
+              Редактировать
+            </button>
+            <button class="btn btn--default btn--action">
+              <img src="/officemag/icons/export.png" alt="Выгрузить в Excel" />
+              Выгрузить в Excel
+            </button>
+            <button class="btn btn--default btn--action">
+              <img src="/officemag/icons/remove.png" alt="Удалить список" />
+              Удалить список
+            </button>
+            <button class="btn btn--default btn--action">
+              <img src="/officemag/icons/print.png" alt="Распечатать" />
+              Распечатать
+            </button>
+            <button class="btn btn--default btn--action">
+              <img src="/officemag/icons/import.png" alt="Загрузить из файла" />
+              Загрузить из файла
+            </button>
+          </div>
+          <div class="controls">
+            <label>
+              Отключить кнопки
+              <input type="checkbox" id="disable-buttons" />
+            </label>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="section__head">
+          <h2 class="section__title">Витрина</h2>
+        </div>
+        <div class="section__body">
+          <div class="slider-wrap">
+            <div id="slider" class="slider"></div>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="section__head">
+          <h2 class="section__title">Красота</h2>
+        </div>
+        <div class="section__body">
+          <div class="beauty">
+            <div class="beauty__surface">
+              <button class="beauty__button">Кнопка</button>
+            </div>
+            <div class="beauty__toggle">
+              <label class="toggle" aria-label="Переключатель">
+                <input type="checkbox" class="toggle__input" />
+                <div class="toggle__track"></div>
+                <div class="toggle__thumb"></div>
+              </label>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="section__head">
+          <h2 class="section__title">
+            <a id="main-page" href="/src/pages/black-page.html"
+              >Черная страница (уже нет)</a
+            >
+          </h2>
+        </div>
+      </section>
+      <section class="section">
+        <div class="section__head">
+          <h2 class="section__title">Схема</h2>
+        </div>
+        <div class="section__body">
+          <div class="mason-scheme">
+            <h2 class="mason-scheme__title">Масоны Самсона</h2>
+            <div class="mason-scheme__surface">
+              <svg class="mason-scheme__svg" id="lines"></svg>
+
+              <div class="node" data-id="allik" style="left: 0px; top: 0px">
+                Алликсаар
+              </div>
+              <div class="node" data-id="duhast" style="left: 560px; top: 0px">
+                Ду Хаст Вячеславович
+              </div>
+              <div
+                class="node"
+                data-id="anastasia"
+                style="left: 560px; top: 70px"
+              >
+                Анастасия Ширинкина
+              </div>
+              <div
+                class="node"
+                data-id="stanislav"
+                style="left: 80px; top: 150px"
+              >
+                Станислав Клитотехнис
+              </div>
+              <div
+                class="node"
+                data-id="alexander"
+                style="left: 560px; top: 158px"
+              >
+                Александр Троян
+              </div>
+              <div
+                class="node"
+                data-id="ludmila"
+                style="left: 160px; top: 230px"
+              >
+                Людмила Водолазская
+              </div>
+              <div class="node" data-id="olga" style="left: 160px; top: 300px">
+                Ольга Боргдорф
+              </div>
+              <div
+                class="node"
+                data-id="sergey"
+                style="left: 160px; top: 400px"
+              >
+                Сергей Брус
+              </div>
+              <div
+                class="node"
+                data-id="dmitry"
+                style="left: 560px; top: 300px"
+              >
+                Дмитрий Возигнуй
+              </div>
+              <div
+                class="node"
+                data-id="kristina"
+                style="left: 560px; top: 350px"
+              >
+                Кристина Болтушкина
+              </div>
+              <div class="node" data-id="maxim" style="left: 560px; top: 420px">
+                Максим Висюлькин
+              </div>
+              <div class="node" data-id="igor" style="left: 80px; top: 450px">
+                Игорь Зверёк
+              </div>
+              <div class="node" data-id="anton" style="left: 80px; top: 500px">
+                Антон Строй
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
