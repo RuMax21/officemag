@@ -6,9 +6,12 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
+    "@types/node": "^25.9.3",
+    "gh-pages": "^6.3.0",
     "prettier": "^3.8.4",
     "sass": "^1.100.0",
     "typescript": "~6.0.2",
@@ -16,6 +19,7 @@
   },
   "dependencies": {
     "@types/jquery": "^4.0.1",
-    "jquery": "^4.0.0"
+    "jquery": "^4.0.0",
+    "path": "^0.12.7"
   }
 }

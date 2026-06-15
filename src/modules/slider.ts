@@ -61,7 +61,7 @@ function createProductCard(product: ProductData): string {
   return `
       <article class="product-card">
         <div class="product-card__img-wrap">
-          <img class="product-card__img" src="/mock/${product.id}.png" alt="${product.title}" loading="lazy" />
+          <img class="product-card__img" src="./mock/${product.id}.png" alt="${product.title}" loading="lazy" />
           </div>
           <p class="product-card__text">${product.title}</p>
       </article>
